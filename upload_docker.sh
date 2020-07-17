@@ -6,14 +6,16 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath = shahzeb01/mlapi
+export dockerpath="shahzeb01/ml-ms-api:development"
 
 # Step 2:  
 # Authenticate & tag
+docker login --u shahzeb01
+docker tag development:latest $dockerpath
 echo "Docker ID and Image: $dockerpath"
-docker login && docker image tag mlapi $dockerpath
+
 
 
 # Step 3:
 # Push image to a docker repository
-docker image push $dockerpath
+docker push $dockerpath
