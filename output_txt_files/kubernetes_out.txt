@@ -1,1 +1,11 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) shahzeb@e7240:~/Operationalizin_ML_MicroserviceAPI$ sudo ./run_kubernetes.sh 
+./run_kubernetes.sh: line 8: dockerpath: command not found
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/ml-ms-api created
+NAME                         READY   STATUS              RESTARTS   AGE
+ml-ms-api-5c5d5f99d7-t9xvm   0/1     ContainerCreating   0          0s
+service/ml-ms-api exposed
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
